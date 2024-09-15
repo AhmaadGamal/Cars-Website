@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buy Card</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        html,
+        body,
+        form {
+          margin: 10px;
+          padding: 5px;
+          background-color: #000;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: .5rem;
+            padding-left: 1rem;
+            border: var(--border);
+            border-radius: .5rem;
+            box-shadow: var(--box-shadow);
+            color: var(--green);
+            cursor: pointer;
+            font-size: 3rem;
+            background: #fff;
+            width: 130px;
+        }
+
+
+        .paied {
+            margin-top: 1rem;
+            padding: .5rem;
+            font-size: 20px;
+        }
+
+        .box {
+          width: 50%;
+          margin: .7rem 0;
+          border-radius: .5rem;
+          border: var(--border);
+          font-size: 1.6rem;
+          color: var(--black);
+          text-transform: none;
+          padding: 1rem;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<button class="btn">طرق الدفع</button>
+
+
+<form action="book_form.php">
+  <input type="radio" class="paied" name="paied" value="HTML">
+  <label for="html" style=" font-size: 20px; color: #fff";>الدفع عند الاستلام</label><br>
+  <input type="radio" class="paied" name="paied" value="CSS">
+  <label for="css" style=" font-size: 20px; color: #fff";>بطاقة الأتمان</label><br>
+</form>
+    
+
+
+<form action="book_form.php" method="post" class="book">
+                <input type="text" placeholder="الاسم" class="box" name="name">
+                <input type="text" placeholder=" العنوان" class="box" name="phone">
+                <input type="number" placeholder="رقم الجوال" class="box" name="email">
+                <br>
+                <input href="index.php" type="submit" value="تأكيد" class="btn" name="send">
+            </form>
+<script>
+  alert("تمت الاضافة الي السلة");
+</script>
+</body>
+</html>
